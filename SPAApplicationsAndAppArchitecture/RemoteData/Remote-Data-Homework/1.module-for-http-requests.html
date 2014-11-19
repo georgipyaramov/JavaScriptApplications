@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 1 and Problem 3</title>
+    <link href="styles/student-requests-styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Problem Description:</h1>
+    <h3>Problem 1:</h3>
+    <p>Create a module that exposes methods for performing HTTP requests by given URL and headers</p>
+    <ul>
+        <li>getJSON and postJSON - Both methods should work with promises</li>
+    </ul>
+    <h3>Problem 3:</h3>
+    <p>Using the REST API at 'localhost:3000/students' create a web application for managing students</p>
+    <ul>
+        <li>
+            The REST API provides methods as follows:
+            <ul>
+                <li>POST creates a new student</li>
+                <li>ET returns all students</li>
+                <li>DELETE deletes a student by Id</li>
+            </ul>
+        </li>
+        <li>You may extend the demo for jQuery.ajax()</li>
+    </ul>
+    <hr />
+    <label for="students-name">Name:</label>
+    <input id="students-name" placeholder="Enter name..." />
+    <label for="students-grade">Grade:</label>
+    <input id="students-grade" placeholder="Enter grade..." />
+    <button id="add-btn">Add student</button>
+    <div class="added-message">
+        <span class="success"></span>
+        <span class="error"></span>
+    </div>
+    <hr />
+    <label for="students-id">ID:</label>
+    <input id="students-id" placeholder="Enter ID..." />
+    <button id="delete-btn">Delete student</button>
+    <div class="removed-message">
+        <span class="success"></span>
+        <span class="error"></span>
+    </div>
+    <div class="students-container"></div>
+    <script src="libs/require.js" data-main="../scripts/main.js"></script>
+</body>
+</html>

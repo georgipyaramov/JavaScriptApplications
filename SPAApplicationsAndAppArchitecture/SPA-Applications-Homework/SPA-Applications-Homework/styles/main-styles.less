@@ -1,0 +1,108 @@
+﻿body {
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-size: 13px;
+    background-color: lightgoldenrodyellow;
+
+    .outer-container{
+        margin: 20px;
+        border: 1px solid cornflowerblue;
+        border-radius: 5px;
+        background-color: #d3e4f1;
+    }
+
+    h1{
+        text-align: center;
+        color: #70a3c8;
+    }
+
+    .main-navigation{
+        list-style: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+        background-color: #d3e4f1;
+
+        li{
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+            padding-top: 10px;
+            height: 30px;
+
+            a{
+                text-decoration: none;
+                border-top: 2px outset #0296cf;
+                border-right: 2px outset #010b79;
+                border-bottom: 2px outset #010b79;
+                border-left: 2px outset #0296cf;
+                border-radius: 5px;
+                padding: 10px 15px; 
+                width: 120px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #70a3c8;
+                color: #fff;
+            }
+        }
+    }
+
+    hr{
+        height: 2px;
+        width: 100%;
+        background-color: cornflowerblue;
+    }
+
+    img{
+        display: inline-block;
+        margin: 35px 10px 65px 40px;
+        padding: 20px;
+        border: 1px solid cornflowerblue;
+        border-radius: 5px;
+        background-color: #fff;
+        position: absolute;
+    }
+
+    #main-container{
+        border-left: 3px solid cornflowerblue;
+       // background-color: #fff;
+        width: 50%;
+        height: 290px;
+        position: relative;
+        top: 30px;
+        left: 380px;
+        margin-bottom: 80px;
+
+        h2{
+            margin-left: 50px;
+        }
+    }
+
+    #main-content{
+        padding: 5px 25px;
+        font-size: 17px;
+
+        .home-paragraph, .about-paragraph, .list-of-names{
+            color: #5580a0;
+        }
+
+        .home-paragraph, .list-of-names{
+            font-style: italic;
+        }
+
+        .home-paragraph{
+            font-weight: bold;
+        }
+
+        #display{
+            width: 95%;
+            height: 280px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .posts{
+                width: 100%;
+            }
+        }
+    }
+
+
+}

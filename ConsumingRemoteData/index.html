@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #add-student-controls-container{
+        }
+        #all-enrolled-students-list-container{
+        }
+    </style>
+</head>
+<body>
+<div id="add-student-controls-container">
+    <h2>Enroll new student</h2>
+    <label for="input-student-name">Name</label>
+    <input type="text" id="input-student-name"/>
+    <br/>
+    <label for="input-student-grade">Grade</label>
+    <input type="text" id="input-student-grade"/>
+    <br/>
+    <button id="add-student-btn">Do it!</button>
+</div>
+<div id="all-enrolled-students-list-container">
+    <h2>All enrolled students</h2>
+    <button id="show-all-student-btn">Show students</button>
+</div>
+<div id="delete-student-controls-container">
+    <h2>Unenroll a student</h2>
+    <label for="input-student-id">ID</label>
+    <input type="text" id="input-student-id"/>
+    <br/>
+    <button id="delete-student-btn">Do it!</button>
+</div>
+<script src="libs/jquery-2.1.1.js"></script>
+<script src="libs/q.js"></script>
+<script src="scripts/httpRequestModule.js"></script>
+<script src="appMain.js"></script>
+</body>
+</html>
